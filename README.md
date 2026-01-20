@@ -1,6 +1,6 @@
 # Viking Theme for Starship
 
-A frosty theme for cold Swedish servers. This theme features icy blues and crisp whites that evoke the chill of Nordic winters.
+An Arctic-inspired theme embodying the essence of Scandinavian frost. This theme features icy blues and crisp whites that evoke the chill of Nordic winters, perfect for cold Swedish servers.
 
 ## Usage
 
@@ -16,9 +16,9 @@ Looking for inspiration or ready-made presets? Visit the Show & Tell discussions
 
 ## Screenshots
 
-![Viking Theme Screenshot 1](Screenshot.jpg)
+![Viking Theme Screenshot 1](screenshot1.webp)
 
-![Viking Theme Screenshot 2](Screenshot2.jpg)
+![Viking Theme Screenshot 2](screenshot2.webp)
 
 ## Configuration
 
