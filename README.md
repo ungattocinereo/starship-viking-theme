@@ -16,9 +16,9 @@ Looking for inspiration or ready-made presets? Visit the Show & Tell discussions
 
 ## Screenshots
 
-![Viking Theme Screenshot 1](Screenshot%202026-01-20%20at%207.10.53%E2%80%AFPM.jpg)
+![Viking Theme Screenshot 1](Screenshot.jpg)
 
-![Viking Theme Screenshot 2](Screenshot%202026-01-20%20at%207.14.53%E2%80%AFPM.jpg)
+![Viking Theme Screenshot 2](Screenshot2.jpg)
 
 ## Configuration
 
