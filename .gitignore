@@ -1,0 +1,13 @@
+# Logs
+*.log
+*.out
+
+# Temporary files
+*.tmp
+*.temp
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db

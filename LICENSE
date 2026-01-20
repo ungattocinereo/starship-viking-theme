@@ -1,0 +1,24 @@
+# Starship Viking Theme
+
+A frosty theme for cold Swedish servers.
+
+## Features
+
+- Powerline-style prompt with smooth color transitions
+- Icy blue and white color scheme
+- Clean, modern aesthetic with Scandinavian minimalism
+- Optimized for terminal use on remote servers
+
+## Installation
+
+1. Copy the `starship.toml` file content to your Starship configuration file (`~/.config/starship.toml`)
+2. Ensure you have the [Starship prompt installed](https://starship.rs/#installation)
+3. Customize as needed
+
+## Preview
+
+See the screenshots in the repository for examples of this theme in action.
+
+## License
+
+MIT

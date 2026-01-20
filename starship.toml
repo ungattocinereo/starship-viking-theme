@@ -1,0 +1,153 @@
+format = """
+[ ](#FFFFFF)\
+[ ](bg:#00797d)\
+$os\
+$username\
+[](bg:#008c9a fg:#00797d)\
+[ ](bg:#008c9a fg:#FFFFFF)\
+$directory\
+[](fg:#008c9a bg:#00a1ae)\
+$git_branch\
+$git_status\
+[](fg:#00a1ae bg:#00c5cf)\
+$c\
+$golang\
+$java\
+$nodejs\
+$python\
+$rust\
+[](fg:#00c5cf bg:#FFFFFF)\
+$time\
+[ ](fg:#FFFFFF)\
+$fill\
+$cmd_duration\
+$hostname\
+$character"""
+
+add_newline = false
+
+# ======================
+# USER
+# ======================
+[username]
+show_always = true
+style_user = "fg:#FFFFFF bg:#00797d"
+style_root = "fg:#FFFFFF bg:#00797d"
+format = '[$user ](bold $style)'
+disabled = false
+
+# ======================
+# OS (dynamic icon)
+# ======================
+[os]
+disabled = false
+style = "fg:#FFFFFF bg:#00797d"
+format = '[ $symbol ]($style)'
+
+[os.symbols]
+Macos   = ""
+Linux   = ""
+Debian  = ""
+Ubuntu  = ""
+Arch    = ""
+Fedora  = ""
+Windows = ""
+
+# ======================
+# DIRECTORY
+# ======================
+[directory]
+style = "fg:#00FFFF bg:#008c9a"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music"     = " "
+"Pictures"  = " "
+
+# ======================
+# GIT
+# ======================
+[git_branch]
+symbol = ""
+style = "fg:#002545 bg:#00a1ae"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:#00FFFF bg:#00a1ae"
+conflicted = "🏳"
+up_to_date = " "
+untracked = " "
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+stashed = ""
+modified = " "
+staged = '[++\($count\)](fg:#002545 bg:#00a1ae)'
+renamed = "襁"
+deleted = ""
+format = '[$all_status$ahead_behind](bold $style)'
+
+# ======================
+# LANGUAGES
+# ======================
+[c]
+symbol = ""
+style = "bg:#00c5cf"
+format = '[ $symbol ]($style)'
+
+[golang]
+symbol = "go"
+style = "fg:#002545 bg:#00c5cf"
+format = '[ $symbol ]($style)'
+
+[java]
+symbol = ""
+style = "fg:#002545 bg:#00c5cf"
+format = '[ $symbol ]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:#002545 bg:#00c5cf"
+format = '[ $symbol ]($style)'
+
+[python]
+symbol = " "
+style = "fg:#002545 bg:#00c5cf"
+format = '[ $symbol ]($style)'
+
+[rust]
+symbol = ""
+style = "fg:#002545 bg:#00c5cf"
+format = '[ $symbol ]($style)'
+
+# ======================
+# TIME
+# ======================
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:#002545 bg:#FFFFFF"
+format = '[  $time ]($style)'
+
+# ======================
+# MISC
+# ======================
+[cmd_duration]
+min_time = 1
+format = 'took [$duration](bold #00FFFF) on'
+
+[hostname]
+ssh_only = false
+format = ' [$hostname](#00a1ae) '
+disabled = false
+
+[fill]
+symbol = ' '
+
+[character]
+success_symbol = '[](bold green) '
+error_symbol = '[](bold red) '
